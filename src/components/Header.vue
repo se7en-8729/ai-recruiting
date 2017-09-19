@@ -11,11 +11,12 @@
                         <el-col :span="18">
                             <div class="head-company">迷你校</div>
                             <div class="nav-wrap">
-                                <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" :router="true">
+                                <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" :router="false">
                                   <el-menu-item index="1">首页</el-menu-item>
                                   <el-menu-item index="2">职位管理</el-menu-item>
                                   <el-menu-item index="3">招聘管理</el-menu-item>
                                   <el-menu-item index="4">简历库</el-menu-item>
+                                  <el-menu-item index="5">智能招聘</el-menu-item>
                                 </el-menu>
                             </div>
                         </el-col>
@@ -45,7 +46,7 @@ export default {
   width: 100%;
   height: 60px;
   border-bottom: 1px solid #ddd;
-  box-sizing: border-box; // margin-bottom: -60px;
+  box-sizing: border-box; 
   .inner {
     width: 1180px;
     margin: 0 auto;
@@ -57,7 +58,7 @@ export default {
 }
 
 .header-logo {
-  margin-top: 9px;
+  margin-top: 8px;
   border-right: 1px solid #ddd;
   padding-right: 14px;
   width: 131px;
@@ -107,74 +108,5 @@ export default {
   .el-menu--horizontal>.el-submenu:hover .el-submenu__title {
     border-bottom: 3px solid #049cff;
   }
-}
-
-.head-icon-group {
-  list-style: none;
-  height: 60px;
-  box-sizing: border-box;
-  margin: 0;
-  &>li {
-    float: right;
-    padding: 0 12px;
-    line-height: 60px;
-    height: 60px;
-  }
-  &>li.setting-select {
-    padding: 0;
-  }
-  &>li.user-select {
-    padding: 0;
-  }
-  &>li:first-child {
-    padding-right: 0;
-  }
-  [class*=" el-icon-"],
-  [class^=el-icon-] {
-    color: #b5b5b5;
-    cursor: pointer;
-    font-size: 18px;
-  }
-}
-
-.user-wrap {
-  padding: 14px 15px 2px 15px;
-  height: 46px;
-  box-sizing: border-box;
-  cursor: pointer;
-  position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    left: -1px;
-    top: 12px;
-    width: 0;
-    height: 34px;
-    border-left: 1px solid #ddd;
-  }
-}
-
-.userImg {
-  float: left;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 50%;
-  color: #fff;
-  font-weight: bold;
-  >img {
-    width: 100%;
-  }
-}
-
-.userName {
-  float: left;
-}
-
-.head-icon-dropdown {
-  transform: translateX(45px)
 }
 </style>

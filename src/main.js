@@ -4,10 +4,12 @@ import Vue from 'vue'
 import ElementUI from 'element-ui'
 import App from './App.vue'
 import router from './router'
+import echarts from 'echarts'
 
 import 'element-ui/lib/theme-default/index.css'
 
 Vue.use(ElementUI)
+Vue.use(echarts)
 
 Vue.config.productionTip = false
 
